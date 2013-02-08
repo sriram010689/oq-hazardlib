@@ -18,14 +18,14 @@ import collections
 
 import numpy
 
-from openquake.hazardlib import const
-from openquake.hazardlib.gsim.base import (GMPE, IPE, SitesContext,
+from oqhazardlib import const
+from oqhazardlib.gsim.base import (GMPE, IPE, SitesContext,
                                            RuptureContext, DistancesContext)
-from openquake.hazardlib.geo.mesh import Mesh
-from openquake.hazardlib.geo.point import Point
-from openquake.hazardlib.imt import PGA, PGV
-from openquake.hazardlib.site import Site, SiteCollection
-from openquake.hazardlib.source.rupture import Rupture
+from oqhazardlib.geo.mesh import Mesh
+from oqhazardlib.geo.point import Point
+from oqhazardlib.imt import PGA, PGV
+from oqhazardlib.site import Site, SiteCollection
+from oqhazardlib.source.rupture import Rupture
 
 
 class _FakeGSIMTestCase(unittest.TestCase):

@@ -1,4 +1,4 @@
-from openquake.hazardlib.mfd.truncated_gr import TruncatedGRMFD
+from oqhazardlib.mfd.truncated_gr import TruncatedGRMFD
 
 
 TEST1_EDGES = [

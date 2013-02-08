@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import unittest
 
-from openquake.hazardlib.mfd.base import BaseMFD
+from oqhazardlib.mfd.base import BaseMFD
 
 
 class BaseMFDTestCase(unittest.TestCase):

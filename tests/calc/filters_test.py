@@ -17,7 +17,7 @@ import unittest
 from itertools import izip
 from types import GeneratorType
 
-from openquake.hazardlib.calc import filters
+from oqhazardlib.calc import filters
 
 
 class SourceSiteDistanceFilterTestCase(unittest.TestCase):

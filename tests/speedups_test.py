@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import unittest
 
-from openquake.hazardlib import speedups
+from oqhazardlib import speedups
 
 
 class SpeedupsRegistryTestCase(unittest.TestCase):

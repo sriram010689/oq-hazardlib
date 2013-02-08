@@ -16,8 +16,8 @@
 import itertools
 import unittest
 
-from openquake.hazardlib.geo.point import Point
-from openquake.hazardlib.geo.mesh import Mesh
+from oqhazardlib.geo.point import Point
+from oqhazardlib.geo.mesh import Mesh
 
 
 def assert_mesh_is(testcase, surface, expected_mesh):

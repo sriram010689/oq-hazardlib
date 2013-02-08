@@ -13,8 +13,8 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-from openquake.hazardlib.gsim.lin_lee_2008 import LinLee2008SInter
-from openquake.hazardlib.gsim.lin_lee_2008 import LinLee2008SSlab
+from oqhazardlib.gsim.lin_lee_2008 import LinLee2008SInter
+from oqhazardlib.gsim.lin_lee_2008 import LinLee2008SSlab
 
 from tests.gsim.utils import BaseGSIMTestCase
 

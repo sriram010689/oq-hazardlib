@@ -13,7 +13,7 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-from openquake.hazardlib.mfd import YoungsCoppersmith1985MFD
+from oqhazardlib.mfd import YoungsCoppersmith1985MFD
 
 from tests.mfd.base_test import BaseMFDTestCase
 

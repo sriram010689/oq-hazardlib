@@ -18,9 +18,9 @@ import unittest
 import numpy
 import shapely.geometry
 
-from openquake.hazardlib import geo
-from openquake.hazardlib.geo import utils as geo_utils
-from openquake.hazardlib.geo import polygon
+from oqhazardlib import geo
+from oqhazardlib.geo import utils as geo_utils
+from oqhazardlib.geo import polygon
 
 
 class PolygonCreationTestCase(unittest.TestCase):
@@ -429,7 +429,7 @@ class PolygonDilateTestCase(unittest.TestCase):
 class PolygonWKTTestCase(unittest.TestCase):
     """
     Test generation of WKT from a
-    :class:`~openquake.hazardlib.geo.polygon.Polygon`.
+    :class:`~oqhazardlib.geo.polygon.Polygon`.
     """
 
     def test_wkt(self):

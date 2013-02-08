@@ -17,13 +17,13 @@ import unittest
 
 import numpy
 
-import openquake.hazardlib
-from openquake.hazardlib import const
-from openquake.hazardlib import imt
-from openquake.hazardlib.site import Site, SiteCollection
-from openquake.hazardlib.geo import Point
-from openquake.hazardlib.tom import PoissonTOM
-from openquake.hazardlib.calc.hazard_curve import hazard_curves_poissonian
+import oqhazardlib
+from oqhazardlib import const
+from oqhazardlib import imt
+from oqhazardlib.site import Site, SiteCollection
+from oqhazardlib.geo import Point
+from oqhazardlib.tom import PoissonTOM
+from oqhazardlib.calc.hazard_curve import hazard_curves_poissonian
 
 
 class HazardCurvesTestCase(unittest.TestCase):
@@ -145,60 +145,60 @@ class HazardCurvesFiltersTestCase(unittest.TestCase):
 
     def test_point_sources(self):
         sources = [
-            openquake.hazardlib.source.PointSource(
+            oqhazardlib.source.PointSource(
                 source_id='point1', name='point1',
                 tectonic_region_type=const.TRT.ACTIVE_SHALLOW_CRUST,
-                mfd=openquake.hazardlib.mfd.EvenlyDiscretizedMFD(
+                mfd=oqhazardlib.mfd.EvenlyDiscretizedMFD(
                     min_mag=4, bin_width=1, occurrence_rates=[5]
                 ),
-                nodal_plane_distribution=openquake.hazardlib.pmf.PMF([
-                    (1, openquake.hazardlib.geo.NodalPlane(strike=0.0,
+                nodal_plane_distribution=oqhazardlib.pmf.PMF([
+                    (1, oqhazardlib.geo.NodalPlane(strike=0.0,
                                                            dip=90.0,
                                                            rake=0.0))
                 ]),
-                hypocenter_distribution=openquake.hazardlib.pmf.PMF([(1, 10)]),
+                hypocenter_distribution=oqhazardlib.pmf.PMF([(1, 10)]),
                 upper_seismogenic_depth=0.0,
                 lower_seismogenic_depth=10.0,
                 magnitude_scaling_relationship = \
-                    openquake.hazardlib.scalerel.PeerMSR(),
+                    oqhazardlib.scalerel.PeerMSR(),
                 rupture_aspect_ratio=2,
                 rupture_mesh_spacing=1.0,
                 location=Point(10, 10)
             ),
-            openquake.hazardlib.source.PointSource(
+            oqhazardlib.source.PointSource(
                 source_id='point2', name='point2',
                 tectonic_region_type=const.TRT.ACTIVE_SHALLOW_CRUST,
-                mfd=openquake.hazardlib.mfd.EvenlyDiscretizedMFD(
+                mfd=oqhazardlib.mfd.EvenlyDiscretizedMFD(
                     min_mag=4, bin_width=2, occurrence_rates=[5, 6, 7]
                 ),
-                nodal_plane_distribution=openquake.hazardlib.pmf.PMF([
-                    (1, openquake.hazardlib.geo.NodalPlane(strike=0,
+                nodal_plane_distribution=oqhazardlib.pmf.PMF([
+                    (1, oqhazardlib.geo.NodalPlane(strike=0,
                                                            dip=90,
                                                            rake=0.0)),
                 ]),
-                hypocenter_distribution=openquake.hazardlib.pmf.PMF([(1, 10)]),
+                hypocenter_distribution=oqhazardlib.pmf.PMF([(1, 10)]),
                 upper_seismogenic_depth=0.0,
                 lower_seismogenic_depth=10.0,
                 magnitude_scaling_relationship = \
-                    openquake.hazardlib.scalerel.PeerMSR(),
+                    oqhazardlib.scalerel.PeerMSR(),
                 rupture_aspect_ratio=2,
                 rupture_mesh_spacing=1.0,
                 location=Point(10, 11)
             ),
         ]
-        sites = [openquake.hazardlib.site.Site(Point(11, 10), 1, True, 2, 3),
-                 openquake.hazardlib.site.Site(Point(10, 16), 2, True, 2, 3),
-                 openquake.hazardlib.site.Site(Point(10, 10.6), 3, True, 2, 3),
-                 openquake.hazardlib.site.Site(Point(10, 10.7), 4, True, 2, 3)]
-        sitecol = openquake.hazardlib.site.SiteCollection(sites)
+        sites = [oqhazardlib.site.Site(Point(11, 10), 1, True, 2, 3),
+                 oqhazardlib.site.Site(Point(10, 16), 2, True, 2, 3),
+                 oqhazardlib.site.Site(Point(10, 10.6), 3, True, 2, 3),
+                 oqhazardlib.site.Site(Point(10, 10.7), 4, True, 2, 3)]
+        sitecol = oqhazardlib.site.SiteCollection(sites)
 
-        from openquake.hazardlib.gsim.sadigh_1997 import SadighEtAl1997
+        from oqhazardlib.gsim.sadigh_1997 import SadighEtAl1997
         gsims = {const.TRT.ACTIVE_SHALLOW_CRUST: SadighEtAl1997()}
         truncation_level = 1
         time_span = 1.0
-        imts = {openquake.hazardlib.imt.PGA(): [0.1, 0.5, 1.3]}
+        imts = {oqhazardlib.imt.PGA(): [0.1, 0.5, 1.3]}
 
-        from openquake.hazardlib.calc import filters
+        from oqhazardlib.calc import filters
         source_site_filter = self.SitesCounterSourceFilter(
             filters.source_site_distance_filter(30)
         )

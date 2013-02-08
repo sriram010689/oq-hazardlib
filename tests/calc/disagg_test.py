@@ -19,13 +19,13 @@ import warnings
 
 import numpy
 
-import openquake.hazardlib
+import oqhazardlib
 
-from openquake.hazardlib.calc import disagg
-from openquake.hazardlib.calc import filters
-from openquake.hazardlib.tom import PoissonTOM
-from openquake.hazardlib.geo import Point, Mesh
-from openquake.hazardlib.site import Site
+from oqhazardlib.calc import disagg
+from oqhazardlib.calc import filters
+from oqhazardlib.tom import PoissonTOM
+from oqhazardlib.geo import Point, Mesh
+from oqhazardlib.site import Site
 
 
 class _BaseDisaggTestCase(unittest.TestCase):
@@ -337,7 +337,7 @@ class DisaggregateTestCase(_BaseDisaggTestCase):
                           array([], dtype=float64), array([], dtype=int64), [])
 
         with mock.patch(
-            'openquake.hazardlib.calc.disagg._collect_bins_data'
+            'oqhazardlib.calc.disagg._collect_bins_data'
         ) as cbd:
             with warnings.catch_warnings(record=True) as w:
                 cbd.return_value = fake_bins_data

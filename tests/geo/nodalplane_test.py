@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import unittest
 
-from openquake.hazardlib.geo.nodalplane import NodalPlane
+from oqhazardlib.geo.nodalplane import NodalPlane
 
 
 class NodalPlaneTestCase(unittest.TestCase):

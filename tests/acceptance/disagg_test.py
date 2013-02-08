@@ -17,16 +17,16 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.source import AreaSource
-from openquake.hazardlib.pmf import PMF
-from openquake.hazardlib.scalerel import WC1994
-from openquake.hazardlib.gsim.boore_atkinson_2008 import BooreAtkinson2008
-from openquake.hazardlib.calc import disagg
-from openquake.hazardlib.geo import Point, Polygon, NodalPlane
-from openquake.hazardlib.mfd import TruncatedGRMFD
-from openquake.hazardlib.imt import SA
-from openquake.hazardlib.tom import PoissonTOM
-from openquake.hazardlib.site import Site
+from oqhazardlib.source import AreaSource
+from oqhazardlib.pmf import PMF
+from oqhazardlib.scalerel import WC1994
+from oqhazardlib.gsim.boore_atkinson_2008 import BooreAtkinson2008
+from oqhazardlib.calc import disagg
+from oqhazardlib.geo import Point, Polygon, NodalPlane
+from oqhazardlib.mfd import TruncatedGRMFD
+from oqhazardlib.imt import SA
+from oqhazardlib.tom import PoissonTOM
+from oqhazardlib.site import Site
 
 
 class DisaggTestCase(unittest.TestCase):

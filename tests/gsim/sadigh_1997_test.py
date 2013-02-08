@@ -13,7 +13,7 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-from openquake.hazardlib.gsim.sadigh_1997 import SadighEtAl1997
+from oqhazardlib.gsim.sadigh_1997 import SadighEtAl1997
 
 from tests.gsim.utils import BaseGSIMTestCase
 

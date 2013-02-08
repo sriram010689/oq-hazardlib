@@ -17,10 +17,10 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.geo import Point
-from openquake.hazardlib.geo.mesh import Mesh
-from openquake.hazardlib.geo import utils as geo_utils
-from openquake.hazardlib.geo.surface.planar import PlanarSurface
+from oqhazardlib.geo import Point
+from oqhazardlib.geo.mesh import Mesh
+from oqhazardlib.geo import utils as geo_utils
+from oqhazardlib.geo.surface.planar import PlanarSurface
 
 from tests.geo.surface import _planar_test_data as test_data
 from tests.geo.surface import _utils as utils

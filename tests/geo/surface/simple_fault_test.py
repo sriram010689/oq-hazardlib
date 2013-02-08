@@ -18,9 +18,9 @@ from math import pi, sin, cos, atan2, degrees
 
 import numpy
 
-from openquake.hazardlib.geo.point import Point
-from openquake.hazardlib.geo.line import Line
-from openquake.hazardlib.geo.surface.simple_fault import SimpleFaultSurface
+from oqhazardlib.geo.point import Point
+from oqhazardlib.geo.line import Line
+from oqhazardlib.geo.surface.simple_fault import SimpleFaultSurface
 
 import _simple_fault_test_data as test_data
 from tests.geo.surface import _utils as utils

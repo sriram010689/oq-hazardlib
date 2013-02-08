@@ -18,12 +18,12 @@ import unittest
 import numpy
 from numpy.testing import assert_allclose, assert_array_equal
 
-from openquake.hazardlib import const
-from openquake.hazardlib.imt import SA, PGV
-from openquake.hazardlib.site import Site, SiteCollection
-from openquake.hazardlib.geo import Point
-from openquake.hazardlib.calc.gmf import ground_motion_fields
-from openquake.hazardlib.correlation import JB2009CorrelationModel
+from oqhazardlib import const
+from oqhazardlib.imt import SA, PGV
+from oqhazardlib.site import Site, SiteCollection
+from oqhazardlib.geo import Point
+from oqhazardlib.calc.gmf import ground_motion_fields
+from oqhazardlib.correlation import JB2009CorrelationModel
 
 
 class BaseGMFCalcTestCase(unittest.TestCase):

@@ -17,13 +17,13 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.const import TRT
-from openquake.hazardlib.source.simple_fault import SimpleFaultSource
-from openquake.hazardlib.source.rupture import ProbabilisticRupture
-from openquake.hazardlib.mfd import TruncatedGRMFD, EvenlyDiscretizedMFD
-from openquake.hazardlib.scalerel import PeerMSR, WC1994
-from openquake.hazardlib.geo import Point, Line
-from openquake.hazardlib.tom import PoissonTOM
+from oqhazardlib.const import TRT
+from oqhazardlib.source.simple_fault import SimpleFaultSource
+from oqhazardlib.source.rupture import ProbabilisticRupture
+from oqhazardlib.mfd import TruncatedGRMFD, EvenlyDiscretizedMFD
+from oqhazardlib.scalerel import PeerMSR, WC1994
+from oqhazardlib.geo import Point, Line
+from oqhazardlib.tom import PoissonTOM
 
 from tests import assert_angles_equal
 from tests.geo.surface._utils import assert_mesh_is

@@ -2,14 +2,14 @@
 Calculators
 ===========
 
-.. automodule:: openquake.hazardlib.calc
+.. automodule:: oqhazardlib.calc
 
 
 --------------------
 Stochastic event set
 --------------------
 
-.. automodule:: openquake.hazardlib.calc.stochastic
+.. automodule:: oqhazardlib.calc.stochastic
     :members:
 
 
@@ -17,7 +17,7 @@ Stochastic event set
 Hazard curve
 ------------
 
-.. automodule:: openquake.hazardlib.calc.hazard_curve
+.. automodule:: oqhazardlib.calc.hazard_curve
     :members:
 
 
@@ -25,14 +25,14 @@ Hazard curve
 Ground-Motion Fields
 --------------------
 
-.. automodule:: openquake.hazardlib.calc.gmf
+.. automodule:: oqhazardlib.calc.gmf
     :members:
 
 
 Correlation models
 ------------------
 
-.. automodule:: openquake.hazardlib.correlation
+.. automodule:: oqhazardlib.correlation
     :members:
 
 
@@ -40,7 +40,7 @@ Correlation models
 Disaggregation
 --------------
 
-.. automodule:: openquake.hazardlib.calc.disagg
+.. automodule:: oqhazardlib.calc.disagg
 
 .. autofunction:: disaggregation
 
@@ -62,5 +62,5 @@ PMF-Extractors
 Filters
 -------
 
-.. automodule:: openquake.hazardlib.calc.filters
+.. automodule:: oqhazardlib.calc.filters
     :members:

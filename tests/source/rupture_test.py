@@ -17,11 +17,11 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib import const
-from openquake.hazardlib.geo import Point
-from openquake.hazardlib.geo.surface.planar import PlanarSurface
-from openquake.hazardlib.tom import PoissonTOM
-from openquake.hazardlib.source.rupture import Rupture, ProbabilisticRupture
+from oqhazardlib import const
+from oqhazardlib.geo import Point
+from oqhazardlib.geo.surface.planar import PlanarSurface
+from oqhazardlib.tom import PoissonTOM
+from oqhazardlib.source.rupture import Rupture, ProbabilisticRupture
 
 
 def make_rupture(rupture_class, **kwargs):

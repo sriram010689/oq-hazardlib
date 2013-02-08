@@ -2,5 +2,5 @@
 Nodal plane
 ===========
 
-.. automodule:: openquake.hazardlib.geo.nodalplane
+.. automodule:: oqhazardlib.geo.nodalplane
     :members:

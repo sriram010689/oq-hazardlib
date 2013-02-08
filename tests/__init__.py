@@ -16,7 +16,7 @@
 import unittest
 import functools
 
-from openquake.hazardlib import speedups
+from oqhazardlib import speedups
 
 
 def assert_angles_equal(testcase, angle1, angle2, delta):

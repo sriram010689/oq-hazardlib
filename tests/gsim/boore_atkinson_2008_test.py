@@ -13,7 +13,7 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-from openquake.hazardlib.gsim.boore_atkinson_2008 import BooreAtkinson2008
+from oqhazardlib.gsim.boore_atkinson_2008 import BooreAtkinson2008
 
 from tests.gsim.utils import BaseGSIMTestCase
 

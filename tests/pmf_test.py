@@ -17,7 +17,7 @@ from decimal import Decimal
 
 import unittest
 
-from openquake.hazardlib.pmf import PMF
+from oqhazardlib.pmf import PMF
 
 
 class PMFTestCase(unittest.TestCase):

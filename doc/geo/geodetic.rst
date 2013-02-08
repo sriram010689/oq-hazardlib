@@ -2,5 +2,5 @@
 Geodetic calculations
 =====================
 
-.. automodule:: openquake.hazardlib.geo.geodetic
+.. automodule:: oqhazardlib.geo.geodetic
     :members:

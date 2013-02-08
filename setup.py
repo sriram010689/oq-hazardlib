@@ -37,10 +37,10 @@ import numpy
 version = "0.9.1"
 url = "http://github.com/gem/oq-hazardlib"
 
-geoutils_speedups = Extension('openquake.hazardlib.geo._utils_speedups',
+geoutils_speedups = Extension('oqhazardlib.geo._utils_speedups',
                               sources=['speedups/geoutilsmodule.c'],
                               extra_compile_args=['-Wall', '-O2'])
-geodetic_speedups = Extension('openquake.hazardlib.geo._geodetic_speedups',
+geodetic_speedups = Extension('oqhazardlib.geo._geodetic_speedups',
                               sources=['speedups/geodeticmodule.c'],
                               extra_compile_args=['-Wall', '-O2'])
 
@@ -48,7 +48,7 @@ include_dirs = [numpy.get_include()]
 
 
 setup(
-    name='openquake.hazardlib',
+    name='oqhazardlib',
     version=version,
     description="hazardlib is a library for performing seismic hazard analysis",
     long_description=__doc__,

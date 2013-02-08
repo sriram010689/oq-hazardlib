@@ -25,11 +25,11 @@ import time
 
 import numpy
 
-from openquake.hazardlib import const
-from openquake.hazardlib.gsim.base import GroundShakingIntensityModel
-from openquake.hazardlib.gsim.base import (SitesContext, RuptureContext,
+from oqhazardlib import const
+from oqhazardlib.gsim.base import GroundShakingIntensityModel
+from oqhazardlib.gsim.base import (SitesContext, RuptureContext,
                                            DistancesContext)
-from openquake.hazardlib.imt import PGA, PGV, SA
+from oqhazardlib.imt import PGA, PGV, SA
 
 
 def check_gsim(gsim_cls, datafile, max_discrep_percentage, debug=False):
@@ -37,8 +37,8 @@ def check_gsim(gsim_cls, datafile, max_discrep_percentage, debug=False):
     Test GSIM against the data file and return test result.
 
     :param gsim_cls:
-        A subclass of either :class:`~openquake.hazardlib.gsim.base.GMPE`
-        or :class:`~openquake.hazardlib.gsim.base.IPE` to test.
+        A subclass of either :class:`~oqhazardlib.gsim.base.GMPE`
+        or :class:`~oqhazardlib.gsim.base.IPE` to test.
     :param datafile:
         A file object containing test data in csv format.
     :param max_discrep_percentage:
@@ -185,15 +185,15 @@ def _parse_csv_line(headers, values):
         A tuple of the following values (in specified order):
 
         sctx
-            An instance of :class:`openquake.hazardlib.gsim.base.SitesContext`
+            An instance of :class:`oqhazardlib.gsim.base.SitesContext`
             with attributes populated by the information from in row in a form
             of single-element numpy arrays.
         rctx
             An instance of
-            :class:`openquake.hazardlib.gsim.base.RuptureContext`.
+            :class:`oqhazardlib.gsim.base.RuptureContext`.
         dctx
             An instance of
-            :class:`openquake.hazardlib.gsim.base.DistancesContext`.
+            :class:`oqhazardlib.gsim.base.DistancesContext`.
         stddev_types
             An empty list, if the ``result_type`` column says "MEAN"
             for that row, otherwise it is a list with one item --
@@ -287,7 +287,7 @@ if __name__ == '__main__':
                 or not issubclass(gsim_class, GroundShakingIntensityModel):
             raise argparse.ArgumentTypeError(
                 "%r is not subclass of "
-                "openquake.hazardlib.gsim.base.GroundShakingIntensityModel"
+                "oqhazardlib.gsim.base.GroundShakingIntensityModel"
                 % import_path
             )
         return gsim_class

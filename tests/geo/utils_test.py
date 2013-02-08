@@ -18,8 +18,8 @@ import unittest
 import numpy
 import shapely.geometry
 
-from openquake.hazardlib import geo
-from openquake.hazardlib.geo import utils
+from oqhazardlib import geo
+from oqhazardlib.geo import utils
 
 from tests import SpeedupsTestCase
 

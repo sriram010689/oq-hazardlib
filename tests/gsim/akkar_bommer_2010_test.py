@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from openquake.hazardlib.gsim.akkar_bommer_2010 import AkkarBommer2010
+from oqhazardlib.gsim.akkar_bommer_2010 import AkkarBommer2010
 from tests.gsim.utils import BaseGSIMTestCase
 
 

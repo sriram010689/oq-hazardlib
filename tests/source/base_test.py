@@ -17,12 +17,12 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib import const
-from openquake.hazardlib.mfd import EvenlyDiscretizedMFD
-from openquake.hazardlib.scalerel.peer import PeerMSR
-from openquake.hazardlib.source.base import SeismicSource
-from openquake.hazardlib.geo import Polygon, Point, RectangularMesh
-from openquake.hazardlib.site import Site, SiteCollection
+from oqhazardlib import const
+from oqhazardlib.mfd import EvenlyDiscretizedMFD
+from oqhazardlib.scalerel.peer import PeerMSR
+from oqhazardlib.source.base import SeismicSource
+from oqhazardlib.geo import Polygon, Point, RectangularMesh
+from oqhazardlib.site import Site, SiteCollection
 
 
 class _BaseSeismicSourceTestCase(unittest.TestCase):

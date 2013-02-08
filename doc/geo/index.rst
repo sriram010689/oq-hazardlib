@@ -2,7 +2,7 @@
 Geographic primitives and utilities
 ===================================
 
-.. automodule:: openquake.hazardlib.geo
+.. automodule:: oqhazardlib.geo
 
 
 .. toctree::

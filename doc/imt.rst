@@ -2,5 +2,5 @@
 Intensity measure types
 =======================
 
-.. automodule:: openquake.hazardlib.imt
+.. automodule:: oqhazardlib.imt
     :members:

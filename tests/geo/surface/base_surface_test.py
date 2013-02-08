@@ -17,9 +17,9 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.geo.point import Point
-from openquake.hazardlib.geo.mesh import Mesh, RectangularMesh
-from openquake.hazardlib.geo.surface.base import BaseSurface
+from oqhazardlib.geo.point import Point
+from oqhazardlib.geo.mesh import Mesh, RectangularMesh
+from oqhazardlib.geo.surface.base import BaseSurface
 
 from tests.geo.surface import _planar_test_data as test_data
 

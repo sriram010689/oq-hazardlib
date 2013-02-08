@@ -2,14 +2,14 @@
 Area-magnitude scaling relationships
 ====================================
 
-.. automodule:: openquake.hazardlib.scalerel
+.. automodule:: oqhazardlib.scalerel
 
 
 ---------------------
 Wells and Coppersmith
 ---------------------
 
-.. automodule:: openquake.hazardlib.scalerel.wc1994
+.. automodule:: oqhazardlib.scalerel.wc1994
     :members:
 
 
@@ -17,7 +17,7 @@ Wells and Coppersmith
 Peer
 ----
 
-.. automodule:: openquake.hazardlib.scalerel.peer
+.. automodule:: oqhazardlib.scalerel.peer
     :members:
 
 
@@ -26,5 +26,5 @@ Peer
 Abstract base relationship
 --------------------------
 
-.. automodule:: openquake.hazardlib.scalerel.base
+.. automodule:: oqhazardlib.scalerel.base
     :members:

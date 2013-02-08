@@ -2,5 +2,5 @@
 Temporal occurrence models
 ==========================
 
-.. automodule:: openquake.hazardlib.tom
+.. automodule:: oqhazardlib.tom
     :members:

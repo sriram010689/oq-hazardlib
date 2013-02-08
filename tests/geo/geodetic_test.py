@@ -17,7 +17,7 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.geo import geodetic
+from oqhazardlib.geo import geodetic
 
 from tests import SpeedupsTestCase
 

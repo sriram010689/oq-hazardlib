@@ -17,9 +17,9 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.geo.point import Point
-from openquake.hazardlib.geo.line import Line
-from openquake.hazardlib.geo.surface.complex_fault import ComplexFaultSurface
+from oqhazardlib.geo.point import Point
+from oqhazardlib.geo.line import Line
+from oqhazardlib.geo.surface.complex_fault import ComplexFaultSurface
 
 from tests.geo.surface import _utils as utils
 

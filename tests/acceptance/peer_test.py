@@ -24,14 +24,14 @@ from decimal import Decimal
 
 import numpy
 
-from openquake.hazardlib import const
-from openquake.hazardlib.site import SiteCollection
-from openquake.hazardlib.source import AreaSource, SimpleFaultSource
-from openquake.hazardlib.pmf import PMF
-from openquake.hazardlib.geo import NodalPlane
-from openquake.hazardlib.scalerel import PeerMSR
-from openquake.hazardlib.gsim.sadigh_1997 import SadighEtAl1997
-from openquake.hazardlib.calc import hazard_curves_poissonian as hazard_curves
+from oqhazardlib import const
+from oqhazardlib.site import SiteCollection
+from oqhazardlib.source import AreaSource, SimpleFaultSource
+from oqhazardlib.pmf import PMF
+from oqhazardlib.geo import NodalPlane
+from oqhazardlib.scalerel import PeerMSR
+from oqhazardlib.gsim.sadigh_1997 import SadighEtAl1997
+from oqhazardlib.calc import hazard_curves_poissonian as hazard_curves
 
 from tests.acceptance import _peer_test_data as test_data
 

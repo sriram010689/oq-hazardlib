@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import unittest
 
-from openquake.hazardlib import geo
+from oqhazardlib import geo
 
 
 class LineResampleTestCase(unittest.TestCase):

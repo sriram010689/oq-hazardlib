@@ -2,5 +2,5 @@
 Various utilities
 =================
 
-.. automodule:: openquake.hazardlib.geo.utils
+.. automodule:: oqhazardlib.geo.utils
     :members:

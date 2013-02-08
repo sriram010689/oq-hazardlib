@@ -2,5 +2,5 @@
 Constants
 =========
 
-.. automodule:: openquake.hazardlib.const
+.. automodule:: oqhazardlib.const
     :members:

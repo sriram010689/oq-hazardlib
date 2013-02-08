@@ -17,11 +17,11 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.source.complex_fault import (ComplexFaultSource,
+from oqhazardlib.source.complex_fault import (ComplexFaultSource,
                                                       _float_ruptures)
-from openquake.hazardlib.geo import Line, Point
-from openquake.hazardlib.geo.surface.simple_fault import SimpleFaultSurface
-from openquake.hazardlib.scalerel.peer import PeerMSR
+from oqhazardlib.geo import Line, Point
+from oqhazardlib.geo.surface.simple_fault import SimpleFaultSurface
+from oqhazardlib.scalerel.peer import PeerMSR
 
 from tests.source import simple_fault_test
 from tests.source import _complex_fault_test_data as test_data

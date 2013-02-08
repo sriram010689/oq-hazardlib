@@ -17,7 +17,7 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.tom import PoissonTOM
+from oqhazardlib.tom import PoissonTOM
 
 
 class PoissonTOMTestCase(unittest.TestCase):

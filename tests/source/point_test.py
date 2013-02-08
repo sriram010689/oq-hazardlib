@@ -18,15 +18,15 @@ from decimal import Decimal
 
 import numpy
 
-from openquake.hazardlib.const import TRT
-from openquake.hazardlib.source.point import PointSource
-from openquake.hazardlib.source.rupture import ProbabilisticRupture
-from openquake.hazardlib.mfd import TruncatedGRMFD, EvenlyDiscretizedMFD
-from openquake.hazardlib.scalerel.peer import PeerMSR
-from openquake.hazardlib.geo import Point, PlanarSurface, NodalPlane, Polygon
-from openquake.hazardlib.pmf import PMF
-from openquake.hazardlib.tom import PoissonTOM
-from openquake.hazardlib.site import Site, SiteCollection
+from oqhazardlib.const import TRT
+from oqhazardlib.source.point import PointSource
+from oqhazardlib.source.rupture import ProbabilisticRupture
+from oqhazardlib.mfd import TruncatedGRMFD, EvenlyDiscretizedMFD
+from oqhazardlib.scalerel.peer import PeerMSR
+from oqhazardlib.geo import Point, PlanarSurface, NodalPlane, Polygon
+from oqhazardlib.pmf import PMF
+from oqhazardlib.tom import PoissonTOM
+from oqhazardlib.site import Site, SiteCollection
 
 from tests.geo.surface import _planar_test_data as planar_surface_test_data
 

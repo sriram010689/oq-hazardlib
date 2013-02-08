@@ -2,13 +2,13 @@
 Seismic sources and ruptures
 ============================
 
-.. automodule:: openquake.hazardlib.source
+.. automodule:: oqhazardlib.source
 
 ------------------
 Earthquake rupture
 ------------------
 
-.. automodule:: openquake.hazardlib.source.rupture
+.. automodule:: oqhazardlib.source.rupture
     :members:
 
 
@@ -16,7 +16,7 @@ Earthquake rupture
 Point source
 ------------
 
-.. automodule:: openquake.hazardlib.source.point
+.. automodule:: oqhazardlib.source.point
     :members:
     :private-members:
 
@@ -25,7 +25,7 @@ Point source
 Area source
 -----------
 
-.. automodule:: openquake.hazardlib.source.area
+.. automodule:: oqhazardlib.source.area
     :members:
 
 
@@ -33,7 +33,7 @@ Area source
 Simple fault
 ------------
 
-.. automodule:: openquake.hazardlib.source.simple_fault
+.. automodule:: oqhazardlib.source.simple_fault
     :members:
 
 
@@ -41,7 +41,7 @@ Simple fault
 Complex fault
 -------------
 
-.. automodule:: openquake.hazardlib.source.complex_fault
+.. automodule:: oqhazardlib.source.complex_fault
     :members:
     :private-members:
 
@@ -50,5 +50,5 @@ Complex fault
 Abstract base seismic source
 ----------------------------
 
-.. automodule:: openquake.hazardlib.source.base
+.. automodule:: oqhazardlib.source.base
     :members:

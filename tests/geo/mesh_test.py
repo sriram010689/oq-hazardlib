@@ -18,10 +18,10 @@ import math
 
 import numpy
 
-from openquake.hazardlib.geo.point import Point
-from openquake.hazardlib.geo.polygon import Polygon
-from openquake.hazardlib.geo.mesh import Mesh, RectangularMesh
-from openquake.hazardlib.geo import utils as geo_utils
+from oqhazardlib.geo.point import Point
+from oqhazardlib.geo.polygon import Polygon
+from oqhazardlib.geo.mesh import Mesh, RectangularMesh
+from oqhazardlib.geo import utils as geo_utils
 
 from tests import assert_angles_equal
 from tests.geo import _mesh_test_data

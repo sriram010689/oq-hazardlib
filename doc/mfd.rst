@@ -2,14 +2,14 @@
 Magnitude-frequency distributions
 =================================
 
-.. automodule:: openquake.hazardlib.mfd
+.. automodule:: oqhazardlib.mfd
 
 
 ------------------
 Evenly discretized
 ------------------
 
-.. automodule:: openquake.hazardlib.mfd.evenly_discretized
+.. automodule:: oqhazardlib.mfd.evenly_discretized
     :members:
 
 
@@ -17,7 +17,7 @@ Evenly discretized
 Truncated Gutenberg-Richter
 ---------------------------
 
-.. automodule:: openquake.hazardlib.mfd.truncated_gr
+.. automodule:: oqhazardlib.mfd.truncated_gr
     :members:
     :private-members:
 
@@ -26,7 +26,7 @@ Truncated Gutenberg-Richter
 Youngs Coppersmith 1985
 -----------------------
 
-.. automodule:: openquake.hazardlib.mfd.youngs_coppersmith_1985
+.. automodule:: oqhazardlib.mfd.youngs_coppersmith_1985
     :members:
     :private-members:
 
@@ -36,5 +36,5 @@ Youngs Coppersmith 1985
 Abstract base distribution
 --------------------------
 
-.. automodule:: openquake.hazardlib.mfd.base
+.. automodule:: oqhazardlib.mfd.base
     :members:

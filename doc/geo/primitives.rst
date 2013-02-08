@@ -2,18 +2,18 @@
 Geographic primitives
 =====================
 
-Various primitives are needed to define :mod:`seismic sources <openquake.hazardlib.source>`
-location and shape. Those implemented include :mod:`~openquake.hazardlib.geo.point`,
-:mod:`~openquake.hazardlib.geo.line` and :mod:`~openquake.hazardlib.geo.polygon`.
+Various primitives are needed to define :mod:`seismic sources <oqhazardlib.source>`
+location and shape. Those implemented include :mod:`~oqhazardlib.geo.point`,
+:mod:`~oqhazardlib.geo.line` and :mod:`~oqhazardlib.geo.polygon`.
 
-:mod:`Mesh <openquake.hazardlib.geo.mesh>` objects are used only internally.
+:mod:`Mesh <oqhazardlib.geo.mesh>` objects are used only internally.
 
 
 -----
 Point
 -----
 
-.. automodule:: openquake.hazardlib.geo.point
+.. automodule:: oqhazardlib.geo.point
     :members:
 
 
@@ -21,7 +21,7 @@ Point
 Line
 ----
 
-.. automodule:: openquake.hazardlib.geo.line
+.. automodule:: oqhazardlib.geo.line
     :members:
 
 
@@ -29,7 +29,7 @@ Line
 Polygon
 -------
 
-.. automodule:: openquake.hazardlib.geo.polygon
+.. automodule:: oqhazardlib.geo.polygon
     :members:
 
 
@@ -37,7 +37,7 @@ Polygon
 Meshes
 ------
 
-.. automodule:: openquake.hazardlib.geo.mesh
+.. automodule:: oqhazardlib.geo.mesh
 
 
 Simple mesh

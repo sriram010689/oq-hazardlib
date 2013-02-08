@@ -2,5 +2,5 @@
 Managing pure-python and C-ext code
 ===================================
 
-.. automodule:: openquake.hazardlib.speedups
+.. automodule:: oqhazardlib.speedups
     :members:

@@ -17,13 +17,13 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.const import TRT
-from openquake.hazardlib.scalerel.peer import PeerMSR
-from openquake.hazardlib.mfd import TruncatedGRMFD, EvenlyDiscretizedMFD
-from openquake.hazardlib.geo import Point, Polygon, NodalPlane
-from openquake.hazardlib.pmf import PMF
-from openquake.hazardlib.tom import PoissonTOM
-from openquake.hazardlib.source.area import AreaSource
+from oqhazardlib.const import TRT
+from oqhazardlib.scalerel.peer import PeerMSR
+from oqhazardlib.mfd import TruncatedGRMFD, EvenlyDiscretizedMFD
+from oqhazardlib.geo import Point, Polygon, NodalPlane
+from oqhazardlib.pmf import PMF
+from oqhazardlib.tom import PoissonTOM
+from oqhazardlib.source.area import AreaSource
 
 from tests.source.base_test import SeismicSourceFilterSitesTestCase
 

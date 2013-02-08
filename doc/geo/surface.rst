@@ -2,14 +2,14 @@
 Rupture surfaces
 ================
 
-.. automodule:: openquake.hazardlib.geo.surface
+.. automodule:: oqhazardlib.geo.surface
 
 
 ------------
 Base surface
 ------------
 
-.. automodule:: openquake.hazardlib.geo.surface.base
+.. automodule:: oqhazardlib.geo.surface.base
     :members:
     :private-members:
 
@@ -18,7 +18,7 @@ Base surface
 Planar surface
 --------------
 
-.. automodule:: openquake.hazardlib.geo.surface.planar
+.. automodule:: oqhazardlib.geo.surface.planar
     :members:
     :private-members:
 
@@ -27,7 +27,7 @@ Planar surface
 Simple fault surface
 --------------------
 
-.. automodule:: openquake.hazardlib.geo.surface.simple_fault
+.. automodule:: oqhazardlib.geo.surface.simple_fault
     :members:
     :private-members:
 
@@ -36,6 +36,6 @@ Simple fault surface
 Complex fault surface
 ---------------------
 
-.. automodule:: openquake.hazardlib.geo.surface.complex_fault
+.. automodule:: oqhazardlib.geo.surface.complex_fault
     :members:
     :private-members:

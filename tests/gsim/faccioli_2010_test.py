@@ -13,7 +13,7 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-from openquake.hazardlib.gsim.faccioli_2010 import FaccioliEtAl2010
+from oqhazardlib.gsim.faccioli_2010 import FaccioliEtAl2010
 
 from tests.gsim.utils import BaseGSIMTestCase
 

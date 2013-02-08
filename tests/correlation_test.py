@@ -17,10 +17,10 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.imt import SA, PGA
-from openquake.hazardlib.correlation import JB2009CorrelationModel
-from openquake.hazardlib.site import Site, SiteCollection
-from openquake.hazardlib.geo import Point
+from oqhazardlib.imt import SA, PGA
+from oqhazardlib.correlation import JB2009CorrelationModel
+from oqhazardlib.site import Site, SiteCollection
+from oqhazardlib.geo import Point
 
 
 aaae = numpy.testing.assert_array_almost_equal

@@ -15,8 +15,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import unittest
 
-from openquake.hazardlib.tom import PoissonTOM
-from openquake.hazardlib.calc.stochastic import stochastic_event_set_poissonian
+from oqhazardlib.tom import PoissonTOM
+from oqhazardlib.calc.stochastic import stochastic_event_set_poissonian
 
 
 class StochasticEventSetTestCase(unittest.TestCase):

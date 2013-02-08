@@ -183,7 +183,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'openquake.hazardlib.tex', u'hazardlib Documentation',
+  ('index', 'oqhazardlib.tex', u'hazardlib Documentation',
    u'GEM Foundation', 'manual'),
 ]
 

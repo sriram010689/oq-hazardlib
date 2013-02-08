@@ -18,8 +18,8 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib.site import Site, SiteCollection
-from openquake.hazardlib.geo.point import Point
+from oqhazardlib.site import Site, SiteCollection
+from oqhazardlib.geo.point import Point
 
 
 class SiteTestCase(unittest.TestCase):

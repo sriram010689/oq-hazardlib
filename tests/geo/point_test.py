@@ -17,8 +17,8 @@ import unittest
 
 import numpy
 
-from openquake.hazardlib import geo
-from openquake.hazardlib.geo.utils import EARTH_RADIUS, spherical_to_cartesian
+from oqhazardlib import geo
+from oqhazardlib.geo.utils import EARTH_RADIUS, spherical_to_cartesian
 
 
 class PointPointAtTestCase(unittest.TestCase):
