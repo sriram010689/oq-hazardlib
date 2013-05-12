@@ -1,0 +1,55 @@
+# The Hazard Library
+# Copyright (C) 2012 GEM Foundation
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+"""
+Module :mod:`openquake.hazardlib.scalerel.el2003b` implements :class:`EL2003B`.
+"""
+from math import log10
+from openquake.hazardlib.scalerel.base import BaseMSR, BaseASR
+
+
+class EL2003B(BaseMSR, BaseASR):
+    """
+	Ellsworth (2003, published in Chapter 4 and Appendix D of the 		2002 Working Group on California Earthquake Probabilities)
+
+    Implements both magnitude-area and area-magnitude scaling relationships.
+    """
+    def get_median_area(self, mag):
+        """
+        The values are a function of magnitude.
+
+        """
+        return 10.0 ** (-4.2 + mag)
+
+    def get_std_dev_area(self, mag):
+        """
+        Standard deviation in area for EL2003B. 
+        """
+        return 0.00
+
+    def get_std_dev_mag(self, area):
+        """
+        Standard deviation on the magnitude for the EL2003B area relation.
+        """
+        return 0.1
+
+    def get_median_mag(self, area):
+        """
+        Return magnitude (Mw) given the area and rake.
+
+        :param area:
+            Area in square km.
+        """
+        return 4.20 + 1.00 * log10(area)
