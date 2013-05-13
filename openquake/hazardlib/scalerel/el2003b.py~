@@ -39,7 +39,7 @@ class EL2003B(BaseMSR, BaseASR):
         """
         return 0.00
 
-    def get_std_dev_mag(self, area):
+    def get_std_dev_mag(self, rake):
         """
         Standard deviation on the magnitude for the EL2003B area relation.
         """

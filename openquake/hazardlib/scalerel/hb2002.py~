@@ -42,7 +42,7 @@ class HB2002(BaseMSR, BaseASR):
             # Mag = 3.07+(4/3)*log(Area) +- 0.04 (if Area > 537)
             return 10.0 ** (0.75 * (-3.07 +  mag))
 
-    def get_std_dev_area(self, mag):
+    def get_std_dev_area(self, mag, rake):
         """
         Standard deviation for HB2002. Magnitude is ignored.
         """
